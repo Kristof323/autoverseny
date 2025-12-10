@@ -1,0 +1,21 @@
+﻿<Window x:Class="DotRace.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pötty Verseny" Height="281" Width="900">
+    <StackPanel Margin="10">
+        <Button Name="StartButton" Content="START" Click="StartButton_Click" 
+                Width="100" Height="40" FontSize="16" Margin="0,0,0,10"/>
+        <TextBlock Name="StatusText" FontSize="20" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Text="Nyomd meg a START gombot!"/>
+        <Canvas Name="TrackCanvas" Width="850" Height="150" Background="LightGray" Margin="10">
+            <Rectangle Canvas.Left="830" Canvas.Top="10" Width="3" Height="130" 
+                       Fill="Black" Stroke="Black" StrokeThickness="2"/>
+            <Ellipse Name="RedDot" Width="25" Height="25" Fill="Red" 
+                     Canvas.Left="10" Canvas.Top="20"/>
+            <Ellipse Name="WhiteDot" Width="25" Height="25" Fill="White" Stroke="Black" StrokeThickness="2"
+                     Canvas.Left="10" Canvas.Top="65"/>
+            <Ellipse Name="GreenDot" Width="25" Height="25" Fill="LimeGreen"
+                     Canvas.Left="10" Canvas.Top="110"/>
+        </Canvas>
+    </StackPanel>
+</Window>
